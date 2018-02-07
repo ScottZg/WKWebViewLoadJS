@@ -2,9 +2,9 @@
 #### 描述
 这里主要是以baidu.com为例，然后通过WKWebView进行加载，将自己写的js注入到baidu.com，然后将菜单(关注、新闻、小说...)单独提出来，放到了Menu里面。  
 #### 样例
-在手动添加js前：    
+在手动添加js前,有关注、新闻、小说等菜单：    
 ![formal](https://raw.githubusercontent.com/ScottZg/MarkDownResource/master/wkwebviewloadjs/webformal.gif)   
-将customjs.js和fetch.js添加到WKWebView之后：   
+将customjs.js和fetch.js添加到WKWebView之后，去掉这些菜单，并且将菜单数据放到menu里面：   
 ![web view load local js](https://raw.githubusercontent.com/ScottZg/MarkDownResource/master/wkwebviewloadjs/webloadjs.gif)   
 
 #### 实现   
