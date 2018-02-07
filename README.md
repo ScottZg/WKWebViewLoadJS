@@ -30,6 +30,8 @@
 webkit.messageHandlers.didFetchTableOfContents.postMessage(entries);
 ```
 
+#### 注意
+如果按照现在这种方式来做有一个缺点：你需要根据h5标签的id或者class来获取DOM元素，如果网页所有人更改了DOM的id或者class，那么自己写的js就要重修改以适应网页改版。
 #### 参考  
 1.[WWDC](https://developer.apple.com/videos/play/wwdc2014/206/)
 
