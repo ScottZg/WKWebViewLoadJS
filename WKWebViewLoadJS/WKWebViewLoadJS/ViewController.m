@@ -51,9 +51,6 @@
     
     [userContentController addUserScript:script];
     
-    
-    
-    
     NSString *getMenuString = [NSString stringWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"fetch" withExtension:@"js"] encoding:NSUTF8StringEncoding error:NULL];
     WKUserScript *fetchScript = [[WKUserScript alloc] initWithSource:getMenuString injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
     [userContentController addUserScript:fetchScript];
